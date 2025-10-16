@@ -1,5 +1,5 @@
 {
-  "homepage": "http://nannstep.github.io/network-graph-app",
+  "homepage": "https://eindevr-principal.github.io/kinship_in_motion_network",
   "name": "network-graph-app",
   "version": "1.0.0",
   "private": true,
@@ -30,3 +30,4 @@
     "sigma": "^3.0.2"
   }
 }
+
