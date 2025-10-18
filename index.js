@@ -15189,6 +15189,7 @@ window.onload = function () {
                         EthnicityNationality: row['ETHNICITY/NATIONALITY'] || "N/A",
                         PhysicalDescriptors: row['PHYSICAL DESCRIPTORS'] === "0" ? "N/A" : row['PHYSICAL DESCRIPTORS'],
                         Locations: row['LOCATION(S)'] === "0" ? "N/A" : row['LOCATION(S)'],
+						BiographicalInformation: row['BIOGRAPHICAL INFORMATION'] === "0" ? "N/A" : row['BIOGRAPHICAL INFORMATION'],
                     });
                 }
             });
@@ -15311,6 +15312,8 @@ window.onload = function () {
                     <div>${data.PhysicalDescriptors || "N/A"}</div>
                     <h3><u>Locations</u></h3>
                     <div>${data.Locations || "N/A"}</div>
+					<h3><u>Biographical Information</u></h3>
+                    <div>${data.BiographicalInformation || "N/A"}</div>
                 `;
 
                 // Show and update the panel
