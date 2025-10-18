@@ -63,7 +63,7 @@ window.onload = function () {
                         EthnicityNationality: row['ETHNICITY/NATIONALITY'] || "N/A",
                         PhysicalDescriptors: row['PHYSICAL DESCRIPTORS'] === "0" ? "N/A" : row['PHYSICAL DESCRIPTORS'],
                         Locations: row['LOCATION(S)'] === "0" ? "N/A" : row['LOCATION(S)'],
-                        BiographicalInformation: row['BIOGRAPHICAL INFORMATION'] === "0" ? "N/A" : row['BIOGRAPHICAL INFORMATION'],
+                        BiographicalInformation: row['BIOGRAPHICAL INFORMATION'] === "0" ? "N/A" : row['BIOGRAPHICAL INFORMATION']
                     });
                 }
             });
@@ -271,3 +271,4 @@ window.onload = function () {
 
 
 };
+
