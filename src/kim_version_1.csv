@@ -365,7 +365,7 @@ Five years after her arrival in Jamaica, Ogo gave birth to her first child: a da
 In the years following her captivity, Ogo would act as a nurse/caregiver for Abasse (renamed Will) when he became seriously ill and died in 1767, who was one of the six that Thistlewood purchased in 1761 and was thus likely one of Ogo's shipmates.  
 
 Ogo outlived Thistlewood by the time of his death in 1786. In a 1787 appraisal of his human property, she was estimated to be ""about 40 years old) and valued at 50 pounds (the exact same price Thistlewood orginally paid for her in 1761)."
-P13,OGO,MOTHER OF,"OGO'S SON [DEAD, 1770]",MARIA,EBO,"4'11 INCHES HIGH (1761)
+P13,OGO,MOTHER OF,"OGO'S SON [DEAD 1770]",MARIA,EBO,"4'11 INCHES HIGH (1761)
 
 'TT' IN DOWNWARD TRIANGLE BRAND ON HER RIGHT SHOULDER (1761)
 ","EGYPT ESTATE (1761-1767)
@@ -871,7 +871,6 @@ P170,AMBO,FATHER OF,AGNES & AMBO'S CHILD,,?,,,
 P170,AMBO,DOMESTIC PARTNER OF,BETTY,,?,,,
 P170,AMBO,DOMESTIC PARTNER OF,AGNES,,?,,,
 P173,MOUNTAIN LUCY'S CHILD,,,,?,,,
-P173,,,,,?,,,
 P18,PARADISE QUASHEBA,MIDWIFE TO,EGYPT LUCY,,?,,PARADISE ESTATE,"Paradise Quasheba was an enslaved 'grannie' (midwife) who lived on Paradise Estate. She attended at least eleven different enslaved women's births between 1759-1766: Egypt Lucy, Nancy, Rosanna, Moll, Agnes, Jenny, Wonga, Molia, Ogo, Nanny and Eve--the majority of whose infants survived both a 9 day observing period and several years into their childhoods. "
 P18,PARADISE QUASHEBA,MIDWIFE TO,LITTLE QUASHE,,?,,PARADISE ESTATE,"Paradise Quasheba was an enslaved 'grannie' (midwife) who lived on Paradise Estate. She attended at least eleven different enslaved women's births between 1759-1766: Egypt Lucy, Nancy, Rosanna, Moll, Agnes, Jenny, Wonga, Molia, Ogo, Nanny and Eve--the majority of whose infants survived both a 9 day observing period and several years into their childhoods. "
 P18,PARADISE QUASHEBA,MIDWIFE TO,MOLIA,,?,,PARADISE ESTATE,"Paradise Quasheba was an enslaved 'grannie' (midwife) who lived on Paradise Estate. She attended at least eleven different enslaved women's births between 1759-1766: Egypt Lucy, Nancy, Rosanna, Moll, Agnes, Jenny, Wonga, Molia, Ogo, Nanny and Eve--the majority of whose infants survived both a 9 day observing period and several years into their childhoods. "
@@ -1124,7 +1123,7 @@ In March/April of 1763, Mary contracted smallpox; though she ultimately recovere
 The diary describes Mary as having one husband/domestic partner on a neighboring sugar estate called Three Mile River named Quacoo with whom she had two children: one daughter born in 1784 who died at 1 week old, aand another daughter born in 1785 named Prue who was still alive by the time of Thistlewood's death inn 1786.
 
 Like her mother, Mary outlived Thistlewood. Inan appraisal of the complete inventory of all his human property, her value was estimated to be just 1 pound."
-P21,MARY,MOTHER OF,"PRUE [DAUGHTER OF MARY, GRANDDAUGHTER OF ABBA]",,AT LEAST HALF AFRICAN,,BREADNUT ISLAND PEN,"Mary was born in January 1762, the first daughter/child of Abba, an African young woman and Neptune, an enslaved man belonging to a white man named Emotson, one of Thistlewood's friends who also owned a tavern in Savanna la Mar. She had three surviving siblings: Johnie, Neptune, and Jenny.
+P21,MARY,MOTHER OF,"PRUE [DAUGHTER OF MARY / GRANDDAUGHTER OF ABBA]",,AT LEAST HALF AFRICAN,,BREADNUT ISLAND PEN,"Mary was born in January 1762, the first daughter/child of Abba, an African young woman and Neptune, an enslaved man belonging to a white man named Emotson, one of Thistlewood's friends who also owned a tavern in Savanna la Mar. She had three surviving siblings: Johnie, Neptune, and Jenny.
 
 In March/April of 1763, Mary contracted smallpox; though she ultimately recovered from the disease itself, she was permanently blinded. 
 
@@ -2236,3 +2235,63 @@ Phibbah secured a promise from Thistlewood in October of 1761 that John would be
 John was not diligent in his apprenticeship, often absenting from work for days on end. He was frequently in debt, and involved in domestic disputes. 
 
 John lived to the age of twenty, then died in September of 1780 of a sudden, putrid stomach infection that turned his fingernails black and shredded his intestines. Phibbah was beside herself with grief, later suspecting that he had been willfully poisoned as a result of a love triangle gone horribly wrong. The death struck a heavy blow to the broader enslaved community, many of whom came to his burial. John’s half-sister Accubah came to stay with their mother for several weeks afterwards. "
+P39,ABASSE,,,,?,,,
+P20,ABBA'S JOHNIE,,,,?,,,
+P21,ABBA'S MARY,,,,?,,,
+P453,ABBA'S MARY'S DAUGHTER (1784),,,,?,,,
+P421,AGNES & AMBO'S CHILD,,,,?,,,
+P166,ANJAW,,,,?,,,
+P451,CAESAR,,,,?,,,
+P456,CHARLOTTE (WONGA'S DAUGHTER),,,,?,,,
+P57,CHUB,,,,?,,,
+P355,CUBBENNA,,,,?,,,
+P60,CUDJOE,,,,?,,,
+P444,CUDJOE [JOHN RICKETT'S],,,,?,,,
+P121,DAGO,,,,?,,,
+P34,DAMSEL,,,,?,,,
+P42,DANIEL,,,,?,,,
+P446,DAVIE [NANCY'S SON],,,,?,,,
+P441,EGYPT LUCY'S CHILD #3,,,,?,,,
+P296,EGYPT SUSANAH,,,,?,,,
+P172,ELLIN'S CHILD,,,,?,,,
+P128,EVE,,,,?,,,
+P270,FLORA [MOUNTAIN LUCY'S CHILD],,,,?,,,
+P59,FRANKE,,,,?,,,
+P87,HAZAT,,,,?,,,
+P448,JAMES [LITTLE MIMBER'S SON],,,,?,,,
+P104,JENNY,,,,?,,,
+P54,JIMMY,,,,?,,,
+P452,JIMMY STEWART,,,,?,,,
+P168,JOAN,,,,?,,,
+P29,JOB,,,,?,,,
+P169,LITTLE AGNES,,,,?,,,
+P171,LITTLE DICK,,,,?,,,
+P56,LITTLE NANCY,,,,?,,,
+P173,MIRTILLA,,,,?,,,
+P173,MOLL,,,,?,,,
+P173,MOUNTAIN LUCY'S CHILD #2,,,,?,,,
+P173,MR. MCARTHUR,,,,?,,,
+P69,MR. PARKER,,,,?,,,
+P119,MULATTO DAVIE,,,,?,,,
+P207,NAGUA,,,,?,,,
+P447,NANCY'S DAUGHTER,,,,?,,,
+P445,NEPTUNE [THOMAS EMOTSON'S],,,,?,,,
+P450,OGO'S SON [DEAD 1770],,,,?,,,
+P233,OGO'S SWEETHEART,,,,?,,,
+P36,OLD POMPEY,,,,?,,,
+P35,PARADISE JACK,,,,?,,,
+P455,PHIBBAH [ABBA & LINCOLN'S DAUGHTER],,,,?,,,
+P436,PHIBBAH'S HUSBAND,,,,?,,,
+P58,PHOEBE,,,,?,,,
+P454,PRUE [DAUGHTER OF MARY / GRANDDAUGHTER OF ABBA],,,,?,,,
+P458,PRUE [MOUNTAIN LUCY'S DAUGHTER],,,,?,,,
+P449,RACHAEL [OGO'S DAUGHTER],,,,?,,,
+P115,ROSANNA,,,,?,,,
+P181,SAM,,,,?,,,
+P174,SARAH'S CHILD/SON,,,,?,,,
+P376,SARAH'S CUBBAH,,,,?,,,
+P457,SAWNEY [CYRUS' SON],,,,?,,,
+P37,SUKEY,,,,?,,,
+P416,TOBBI (AMBO'S CHILD),,,,?,,,
+P242,VINE'S MOTHER,,,,?,,,
+P117,VIOLET,,,,?,,,

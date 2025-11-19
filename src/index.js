@@ -37,14 +37,12 @@ window.onload = function () {
         complete: function (results) {
             console.log("CSV Data Parsed:", results.data);
             // Process the parsed data here
-            // For example, you can create nodes and edges based on the CSV data
-            const graph = new graphology.Graph();
 
             // Preprocess nodes and edges from the CSV data:
             // Make the nodes bigger based on the number of edges
             const sourceTargetCount = {};
             results.data.forEach(row => {
-                if (row.Source && row.Target) {
+                if (row.Source) {
                     if (!sourceTargetCount[row.Source]) {
                         sourceTargetCount[row.Source] = 10;
                     }
@@ -83,11 +81,12 @@ window.onload = function () {
 
             // Create the spring layout and start it
             const layout = new ForceSupervisor(graph, { 
-                isNodeFixed: (_, attr) => attr.highlighted,
+                isNodeFixed: (_, attr) => attr.highlighted || attr.clicked,
                 settings: {
                     attraction: 0.000001,
                     repulsion: 1,
                     gravity: 0.000001,
+                    inertia: 0.5
                 }
             });
             layout.start();
@@ -102,7 +101,7 @@ window.onload = function () {
                 },
             });
 
-            // State for drag'n'drop
+            // State for drag'n'drop 
             let draggedNode = null;
             let isDragging = false;
 
@@ -111,9 +110,13 @@ window.onload = function () {
                 if (isDragging) return; // Ignore if dragging
                 graph.setNodeAttribute(node, "highlighted", true);
                 setHoveredNode(node);
+                if (!renderer.getCustomBBox()) renderer.setCustomBBox(renderer.getBBox());
             });
             renderer.on("leaveNode", (e) => {
                 if (isDragging) return; // Ignore if dragging
+                // if the node is clicked we keep it highlighted
+                if (graph.getNodeAttribute(e.node, "clicked")) return;
+
                 graph.removeNodeAttribute(e.node, "highlighted");
                 setHoveredNode(undefined);
             });
@@ -173,6 +176,17 @@ window.onload = function () {
             });
 
             renderer.on("clickNode", ({ node }) => {
+                // Remove clicked and highlight from previously clicked nodes
+                graph.forEachNode((n) => {
+                    graph.removeNodeAttribute(n, "clicked");
+                    graph.removeNodeAttribute(n, "highlighted");
+                });
+
+                // Add clicked attribute to the clicked node
+                graph.setNodeAttribute(node, "clicked", true);
+                // Add highlight attribute to the clicked node
+                graph.setNodeAttribute(node, "highlighted", true);
+
                 // Get node attributes
                 const data = graph.getNodeAttributes(node);
 
@@ -189,7 +203,7 @@ window.onload = function () {
                     <h3><u>Locations</u></h3>
                     <div>${data.Locations || "N/A"}</div>
                     <h3><u>Biographical Information</u></h3>
-                    <div>${data.BiographicalInformation || "N/A"}</div>
+                    <div style="max-height:400px;overflow: auto">${data.BiographicalInformation || "N/A"}</div>
                 `;
 
                 // Show and update the panel
@@ -202,6 +216,13 @@ window.onload = function () {
             // Optional: Hide the panel when clicking elsewhere
             renderer.on("clickStage", () => {
                 document.getElementById("info-panel").style.display = "none";
+                // Remove clicked from all nodes
+                graph.forEachNode((n) => {
+                    graph.removeNodeAttribute(n, "highlighted");
+                    graph.removeNodeAttribute(n, "clicked");
+                    draggedNode = null;
+                    setHoveredNode(undefined);
+                });
             });
 
               //
@@ -244,7 +265,7 @@ window.onload = function () {
                 }
                 isDragging = false;
                 draggedNode = null;
-            };
+                            };
             renderer.on("upNode", handleUp);
             renderer.on("upStage", handleUp);
 
