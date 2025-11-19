@@ -210,7 +210,7 @@ window.onload = function () {
                 const panel = document.getElementById("info-panel");
                 panel.innerHTML = html;
                 panel.style.display = "block";
-                panel.style.maxWidth = "300px";
+                panel.style.maxWidth = "400px";
             });
 
             // Optional: Hide the panel when clicking elsewhere
