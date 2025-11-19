@@ -18,14 +18,22 @@ module.exports = {
       {
         test: /\.csv$/,
         use: ['csv-loader'],
+      },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader']
       }
     ],
   },
   plugins: [
     new CopyPlugin({
       patterns: [
-        { from: "index.html" },
-        { from: "src/kim_version_1.csv", to: "kim_version_1.csv" },
+        { 
+          from: "index.html" 
+        }, { 
+          from: "src/kim_version_1.csv", 
+          to: "kim_version_1.csv" 
+        },
       ],
     }),
   ],

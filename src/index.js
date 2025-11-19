@@ -4,6 +4,8 @@ import Papa from 'papaparse';
 import EdgeCurveProgram from "@sigma/edge-curve";
 import ForceSupervisor from "graphology-layout-force/worker";
 
+import "./style.css";
+
 
 window.onload = function () {
 
