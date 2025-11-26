@@ -101,6 +101,15 @@ window.onload = function () {
                 },
             });
 
+            // Close button behaviour for the info panel
+            const infoCloseBtn = document.getElementById("info-close");
+            if (infoCloseBtn) {
+                infoCloseBtn.addEventListener("click", () => {
+                    const panel = document.getElementById("info-panel");
+                    if (panel) panel.style.display = "none";
+                });
+            }
+
             // State for drag'n'drop 
             let draggedNode = null;
             let isDragging = false;
@@ -208,9 +217,9 @@ window.onload = function () {
 
                 // Show and update the panel
                 const panel = document.getElementById("info-panel");
-                panel.innerHTML = html;
-                panel.style.display = "block";
-                panel.style.maxWidth = "400px";
+                const content = document.getElementById("info-content");
+                if (content) content.innerHTML = html;
+                if (panel) panel.style.display = "block";
             });
 
             // Optional: Hide the panel when clicking elsewhere

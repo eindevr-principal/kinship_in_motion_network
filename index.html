@@ -10,7 +10,10 @@
       <h1>Kinship In Motion</h1>
     </div>
     <div id="sigma-container" style="position:absolute; inset:0; background:white;"></div>
-    <!-- Add this somewhere in your HTML -->
-    <div id="info-panel" class="overlay" style="display:none;"></div>
+    <!-- Info panel with persistent close button and content area -->
+    <div id="info-panel" class="overlay" style="display:none;">
+      <button id="info-close" aria-label="Close">×</button>
+      <div id="info-content"></div>
+    </div>
   </body>
 </html>
