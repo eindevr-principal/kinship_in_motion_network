@@ -15685,7 +15685,7 @@ window.onload = function () {
 
     let rowSize = {};
 
-    var results = papaparse__WEBPACK_IMPORTED_MODULE_2___default().parse("./kim_version_1.csv", {
+    var results = papaparse__WEBPACK_IMPORTED_MODULE_2___default().parse("./kim_version_3.csv", {
         download: true,
         header: true,
         skipEmptyLines: true,
